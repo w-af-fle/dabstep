@@ -24,7 +24,7 @@ class CommentController extends Controller
         $comment->text = $request->text;
         $comment->user_id = auth()->user()->id;
         $comment->article_id = $request->article_id;
-        if($comment->save()) Mail::to('mariaorel@mail.ru')->send(new CommentMail($comment, $article));
+        if($comment->save()) Mail::to('mariaorel41@mail.ru')->send(new CommentMail($comment, $article));
         return redirect()->route('article.show', ['article'=>$request->article_id])->with('status','Add comment successfully');
     }
 

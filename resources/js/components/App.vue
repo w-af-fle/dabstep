@@ -12,7 +12,7 @@
             window.Echo.channel('test').listen('ArticleCreateEvent', (article) => {
                 console.log(article);
                 this.article=article.article;
-                // alert('Добавлена новая статья!');
+                alert('Добавлена новая статья!');
             })
         }
     }

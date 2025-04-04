@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Comment;
 use App\Events\ArticleCreateEvent;
 
+
 class ArticleController extends Controller
 {
     /**
